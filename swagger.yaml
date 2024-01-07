@@ -4,7 +4,7 @@ info:
   contact: {}
   version: '1.0'
 servers:
-  - url: https://jobs-api-06.herokuapp.com/api/v1
+  - url: https://jobsapi-production-6f03.up.railway.app/api/v1
     variables: {}
 paths:
   /auth/register:
@@ -21,8 +21,8 @@ paths:
             schema:
               $ref: '#/components/schemas/RegisterUserRequest'
             example:
-              name: bob
-              email: bob@gmail.com
+              name: rajat
+              email: rajatgore@gmail.com
               password: secret
         required: true
       responses:
@@ -45,7 +45,7 @@ paths:
             schema:
               $ref: '#/components/schemas/LoginUserRequest'
             example:
-              email: susan@gmail.com
+              email: rajatgore@gmail.com
               password: secret
         required: true
       responses:
